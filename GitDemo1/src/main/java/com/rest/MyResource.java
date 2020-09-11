@@ -20,4 +20,11 @@ public class MyResource {
     public String hi() {
         return "Hi Resource!";
     }
+    
+    @Path("Hello")
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public String hello() {
+        return "Hello Resource!";
+    }
 }
